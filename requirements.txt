@@ -2,3 +2,7 @@ mlflow
 python-dotenv
 pandas
 numpy
+setuptools
+certifi
+
+-e .
