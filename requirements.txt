@@ -6,5 +6,6 @@ setuptools
 certifi
 pymongo
 scikit-learn
+scipy
 
 # -e .

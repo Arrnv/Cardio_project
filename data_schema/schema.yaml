@@ -1,0 +1,18 @@
+columns:
+  -id: int64
+  -age: int64
+  -gender: int64
+  -height: int64
+  -weight: float
+  -ap_hi: int64
+  -ap_lo: int64
+  -cholesterol: int64
+  -gluc: int64
+  -smoke: int64
+  -alco: int64
+  -active: int64
+  -cardio: int64
+  -age_years: int64
+  -bmi: float
+  bp_category: str
+  bp_category_encoded: str
