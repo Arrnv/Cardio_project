@@ -4,5 +4,6 @@ pandas
 numpy
 setuptools
 certifi
+pymongo
 
 # -e .
