@@ -1,0 +1,40 @@
+[ 2025-01-04 03:00:51,550 ] 17 root - INFO - Initiate the data ingestion
+[ 2025-01-04 03:01:04,255 ] 56 root - INFO - performing the train test split on the dataframe
+[ 2025-01-04 03:01:04,255 ] 59 root - INFO - Exporting train test file path
+[ 2025-01-04 03:01:04,469 ] 62 root - INFO - Exporting the train test files
+[ 2025-01-04 03:01:04,474 ] 19 root - INFO - Data Initiation Completed
+[ 2025-01-04 03:01:04,476 ] 23 root - INFO - Initiate the data Validation
+[ 2025-01-04 03:01:04,522 ] 33 root - INFO - Required number of columns:17
+[ 2025-01-04 03:01:04,522 ] 34 root - INFO - Data frame has columns:17
+[ 2025-01-04 03:01:04,522 ] 33 root - INFO - Required number of columns:17
+[ 2025-01-04 03:01:04,522 ] 34 root - INFO - Data frame has columns:17
+[ 2025-01-04 03:01:05,027 ] 25 root - INFO - data Validation Completed
+[ 2025-01-04 03:01:05,027 ] 28 root - INFO - data Transformation started
+[ 2025-01-04 03:01:05,027 ] 78 root - INFO - Entered data transformation
+[ 2025-01-04 03:01:05,027 ] 80 root - INFO - Starting data transformation
+[ 2025-01-04 03:01:05,137 ] 51 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-01-04 03:01:05,228 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-04 03:01:05,229 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-04 03:01:05,229 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-04 03:01:05,230 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-04 03:01:05,230 ] 168 root - INFO - Data transformation completed successfully
+[ 2025-01-04 03:01:05,231 ] 32 root - INFO - data Transformation completed
+[ 2025-01-04 03:01:05,231 ] 34 root - INFO - Model Training stared
+[ 2025-01-04 03:01:05,232 ] 100 root - INFO - Loading transformed training and testing data.
+[ 2025-01-04 03:01:05,234 ] 31 root - INFO - Model training initiated.
+[ 2025-01-04 03:57:13,867 ] 121 root - INFO - Tracking metrics: ClassificationMetricArtifact(f1_score=0.8936611020359377, precision_score=0.9627849079280594, recall_score=0.8337980000743467) for model: VotingClassifier(estimators=[('hgb',
+                              HistGradientBoostingClassifier(random_state=42)),
+                             ('svc', SVC(probability=True, random_state=42)),
+                             ('sgd',
+                              SGDClassifier(loss='log_loss', random_state=42))],
+                 voting='soft')
+[ 2025-01-04 03:57:13,871 ] 121 root - INFO - Tracking metrics: ClassificationMetricArtifact(f1_score=0.8918297804897377, precision_score=0.957461289773694, recall_score=0.8346188074755265) for model: VotingClassifier(estimators=[('hgb',
+                              HistGradientBoostingClassifier(random_state=42)),
+                             ('svc', SVC(probability=True, random_state=42)),
+                             ('sgd',
+                              SGDClassifier(loss='log_loss', random_state=42))],
+                 voting='soft')
+[ 2025-01-04 03:57:13,874 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-04 03:57:13,890 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-04 03:57:13,890 ] 88 root - INFO - Best model: VotingClassifier with accuracy: 0.5992231342419356
+[ 2025-01-04 03:57:13,900 ] 39 root - INFO - Model Training artifact created

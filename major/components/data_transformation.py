@@ -6,7 +6,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder,StandardScaler
 from major.logging.logger import logging
-from major.constant.training_pipeline import TRAGET_COLLUMN, DATA_TRANSFORMATION_IMPUTER_PARAMS
+from major.constant.training_pipeline import TRAGET_COLLUMN
 from major.entity.artifact_entity import (
     DataTransformationArtifact,
     DataValidationArtifact
