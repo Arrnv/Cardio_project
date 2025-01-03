@@ -1,5 +1,0 @@
-[ 2025-01-03 19:10:44,176 ] 12 root - INFO - initate data ingestion
-[ 2025-01-03 19:11:00,312 ] 56 root - INFO - performing the train test split on the dataframe
-[ 2025-01-03 19:11:00,312 ] 59 root - INFO - Exporting train test file path
-[ 2025-01-03 19:11:00,671 ] 62 root - INFO - Exporting the train test files
-[ 2025-01-03 19:11:00,679 ] 19 root - INFO - data validation statred

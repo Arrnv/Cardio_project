@@ -19,7 +19,7 @@ DATA_INGESTION_TRAIN_TEST_SPLIT_RATION: float = 0.2
 """
 defining common const variable for training pipeline
 """
-TRAGET_COLLUMN = "cardio"
+TRAGET_COLLUMN = "cardio_disease"
 PIPELINE_NAME:str = "Major"
 ARTIFACT_DIR: str = "Artifacts"
 FILE_NAME: str = "cardio_data_processed.csv"
@@ -35,6 +35,7 @@ DATA_VALIDATION_VALID_DIR: str = "validation"
 DATA_VALIDATION_INVALID_DIR: str = "invalid"
 DATA_VALIDATION_DRAFT_REPORT_DIR: str = "draft_report"
 DATA_VALIDATION_DRAFT_REPORT_FILE_NAME:str = "report.yaml"
+PREPROCESSING_OBJECT_FILE_NAME = "preprocessing.pkl"
 
 
 """
