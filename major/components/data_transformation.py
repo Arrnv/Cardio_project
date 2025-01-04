@@ -35,7 +35,7 @@ class DataTransformation:
             
         except Exception as e:
             raise MajorException(e,sys)
-        
+    @classmethod
     def get_data_transformer_object(cls)->Pipeline:
         """
             It initialises a KNNImputer object with the parameters specified in the training_pipeline.py file
@@ -73,18 +73,8 @@ class DataTransformation:
         except Exception as e:
             raise MajorException(e,sys)
         
-        
-    def InitiateDataTransformation(self) -> DataTransformationArtifact:
-        logging.info("Entered data transformation")
-        try:
-            logging.info("Starting data transformation")
-
-            # Read training and testing data
-            train_df = DataTransformation.read_data(self.data_validation_artifact.valid_training_file_path)
-            test_df = DataTransformation.read_data(self.data_validation_artifact.valid_testing_file_path)
-
-            # Function to apply transformations
-            def transform_data(df):
+    # Function to apply transformations
+    def transform_data(df):
                 df['age'] = df['age'] / 365.25
                 df = df.rename(columns={
                     'ap_hi': 'systolic_b_pressure',
@@ -131,10 +121,19 @@ class DataTransformation:
                 df_encoded_cleaned = df_encoded.drop(columns=features_to_drop)
 
                 return df_encoded_cleaned
+            
+    def InitiateDataTransformation(self) -> DataTransformationArtifact:
+        logging.info("Entered data transformation")
+        try:
+            logging.info("Starting data transformation")
+
+            # Read training and testing data
+            train_df = DataTransformation.read_data(self.data_validation_artifact.valid_training_file_path)
+            test_df = DataTransformation.read_data(self.data_validation_artifact.valid_testing_file_path)
 
             # Apply transformations
-            train_df = transform_data(train_df)
-            test_df = transform_data(test_df)
+            train_df = self.transform_data(train_df)
+            test_df = self.transform_data(test_df)
 
             # Split features and target
             input_feature_train_df = train_df.drop(columns=[TRAGET_COLLUMN], axis=1)

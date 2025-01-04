@@ -1,0 +1,30 @@
+[ 2025-01-04 04:54:18,437 ] 17 root - INFO - Initiate the data ingestion
+[ 2025-01-04 04:54:26,224 ] 56 root - INFO - performing the train test split on the dataframe
+[ 2025-01-04 04:54:26,225 ] 59 root - INFO - Exporting train test file path
+[ 2025-01-04 04:54:26,536 ] 62 root - INFO - Exporting the train test files
+[ 2025-01-04 04:54:26,547 ] 19 root - INFO - Data Initiation Completed
+[ 2025-01-04 04:54:26,549 ] 23 root - INFO - Initiate the data Validation
+[ 2025-01-04 04:54:26,600 ] 33 root - INFO - Required number of columns:17
+[ 2025-01-04 04:54:26,600 ] 34 root - INFO - Data frame has columns:17
+[ 2025-01-04 04:54:26,600 ] 33 root - INFO - Required number of columns:17
+[ 2025-01-04 04:54:26,600 ] 34 root - INFO - Data frame has columns:17
+[ 2025-01-04 04:54:27,117 ] 25 root - INFO - data Validation Completed
+[ 2025-01-04 04:54:27,117 ] 28 root - INFO - data Transformation started
+[ 2025-01-04 04:54:27,117 ] 78 root - INFO - Entered data transformation
+[ 2025-01-04 04:54:27,117 ] 80 root - INFO - Starting data transformation
+[ 2025-01-04 04:54:27,233 ] 51 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-01-04 04:54:27,365 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-04 04:54:27,378 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-04 04:54:27,378 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-04 04:54:27,378 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-04 04:54:27,378 ] 168 root - INFO - Data transformation completed successfully
+[ 2025-01-04 04:54:27,379 ] 32 root - INFO - data Transformation completed
+[ 2025-01-04 04:54:27,380 ] 34 root - INFO - Model Training stared
+[ 2025-01-04 04:54:27,380 ] 103 root - INFO - Loading transformed training and testing data.
+[ 2025-01-04 04:54:27,382 ] 34 root - INFO - Model training initiated.
+[ 2025-01-04 06:40:05,465 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-04 06:40:05,468 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-04 06:40:05,469 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-01-04 06:40:05,470 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-01-04 06:40:05,470 ] 91 root - INFO - Best model: HistGradientBoosting with accuracy: 0.5995706203708466
+[ 2025-01-04 06:40:05,472 ] 39 root - INFO - Model Training artifact created

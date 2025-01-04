@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/arnavlahane/Projects/End_to_end_major/mlruns/0/69325c71f2b1477eb79ec26b494d4082/artifacts
+end_time: 1735953004010
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 69325c71f2b1477eb79ec26b494d4082
+run_name: entertaining-kit-633
+run_uuid: 69325c71f2b1477eb79ec26b494d4082
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735953001247
+status: 3
+tags: []
+user_id: arnavlahane
